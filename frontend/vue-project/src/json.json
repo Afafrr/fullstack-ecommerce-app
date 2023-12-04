@@ -1,0 +1,109 @@
+[
+  {
+    "_id": { "$oid": "6527d1d4dd80e2d4076b5405" },
+    "name": "iPhone 13 Pro",
+    "brand": "Apple",
+    "price": { "$numberDouble": "1099.99" },
+    "specifications": {
+      "display": "66.1-inch Super Retina XDR",
+      "camera": "Triple 12MP system",
+      "processor": "A15 Bionic",
+      "storage": "128GB",
+      "color": "Graphite"
+    },
+    "image": "https://www.mediaexpert.pl/media/cache/resolve/gallery/images/32/3225298/APPLE_iPhone_13__front_czarny.jpg"
+  },
+
+  {
+    "_id": { "$oid": "6527d7c2dd80e2d4076b5408" },
+    "name": "Xiaomi Mi 11",
+    "brand": "Xiaomi",
+    "price": { "$numberDouble": "699.99" },
+    "specifications": {
+      "display": "6.81-inch AMOLED",
+      "camera": "Triple 108MP system",
+      "processor": "Snapdragon 888",
+      "storage": "128GB",
+      "color": "Midnight Black",
+      "battery": "Li-Po 4600 mAh"
+    },
+    "availability": "Out of stock"
+  },
+  {
+    "_id": { "$oid": "6527d7c2dd80e2d4076b5408" },
+    "name": "Xiaomi Mi 11",
+    "brand": "Xiaomi",
+    "price": { "$numberDouble": "699.99" },
+    "specifications": {
+      "display": "6.81-inch AMOLED",
+      "camera": "Triple 108MP system",
+      "processor": "Snapdragon 888",
+      "storage": "128GB",
+      "color": "Midnight Black",
+      "battery": "Li-Po 4600 mAh"
+    },
+    "availability": "Out of stock"
+  },
+  {
+    "_id": { "$oid": "6527d7c2dd80e2d4076b5408" },
+    "name": "Xiaomi Mi 11",
+    "brand": "Xiaomi",
+    "price": { "$numberDouble": "699.99" },
+    "specifications": {
+      "display": "6.81-inch AMOLED",
+      "camera": "Triple 108MP system",
+      "processor": "Snapdragon 888",
+      "storage": "128GB",
+      "color": "Midnight Black",
+      "battery": "Li-Po 4600 mAh"
+    },
+    "availability": "Out of stock"
+  },
+  {
+    "_id": { "$oid": "6527d78edd80e2d4076b5406" },
+    "name": "Samsung Galaxy Z Fold 3",
+    "brand": "Samsung",
+    "price": { "$numberDouble": "1799.99" },
+    "specifications": {
+      "display": "7.6-inch Dynamic AMOLED 2X",
+      "camera": "Triple 12MP system",
+      "processor": "Snapdragon 888",
+      "storage": "256GB",
+      "color": "Phantom Black",
+      "battery": "Li-Ion 4400 mAh"
+    },
+    "availability": "In stock",
+    "image": "https://www.mediaexpert.pl/media/cache/resolve/gallery/images/30/3060304/Smartfon-SAMSUNG-Galaxy-Z-Flip-3-otwarty-front.jpg"
+  },
+  {
+    "_id": { "$oid": "6527d7c2dd80e2d4076b5408" },
+    "name": "Xiaomi Mi 11",
+    "brand": "Xiaomi",
+    "price": { "$numberDouble": "699.99" },
+    "specifications": {
+      "display": "6.81-inch AMOLED",
+      "camera": "Triple 108MP system",
+      "processor": "Snapdragon 888",
+      "storage": "128GB",
+      "color": "Midnight Black",
+      "battery": "Li-Po 4600 mAh"
+    },
+    "availability": "Out of stock"
+  },
+  {
+    "_id": { "$oid": "6527d78edd80e2d4076b5406" },
+    "name": "Samsung Galaxy Z Fold 3",
+    "brand": "Samsung",
+    "price": { "$numberDouble": "1799.99" },
+    "specifications": {
+      "display": "7.6-inch Dynamic AMOLED 2X",
+      "camera": "Triple 12MP system",
+      "processor": "Snapdragon 888",
+      "storage": "256GB",
+      "color": "Phantom Black",
+      "battery": "Li-Ion 4400 mAh"
+    },
+    "availability": "In stock",
+    "image": "https://www.mediaexpert.pl/media/cache/resolve/gallery/images/30/3060304/Smartfon-SAMSUNG-Galaxy-Z-Flip-3-otwarty-front.jpg"
+  }
+]
