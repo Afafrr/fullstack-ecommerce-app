@@ -54,7 +54,10 @@ export default {
             </button>
             <button
               class="plus"
-              @click="$store.commit('removeFromArr', item._id); this.render"
+              @click="
+                $store.commit('removeFromArr', item._id);
+                this.render;
+              "
             >
               +
             </button>
@@ -98,7 +101,7 @@ export default {
   align-items: center;
   display: grid;
   grid-template-columns: minmax(50px, 1fr) 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   max-height: 300px;
   overflow: hidden;
 }
@@ -132,11 +135,11 @@ export default {
 .quantityControl {
   order: 1;
   padding: 5px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* width: 20%; */
+  grid-area: 2/1/3/4;
   height: 50px;
 }
 .quantityControl span {
@@ -193,6 +196,7 @@ export default {
   .quantityControl {
     grid-auto-flow: row;
     order: 0;
+    grid-area: auto;
   }
 }
 </style>

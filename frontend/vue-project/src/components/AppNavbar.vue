@@ -68,6 +68,7 @@ const numOfItemsInCart = computed(() => {
             </ul>
           </li>
         </ul>
+        <a href="/user/login" class="login-btn">LOGIN</a>
         <a
           href="/cart"
           type="button"
@@ -92,7 +93,10 @@ const numOfItemsInCart = computed(() => {
   display: flex;
   justify-content: center;
 }
-
+.login-btn {
+  text-decoration: none;
+  color: black;
+}
 .cart {
   position: absolute;
 }

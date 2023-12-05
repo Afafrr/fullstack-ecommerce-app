@@ -19,21 +19,19 @@ function handleSubmit(name, brand, price) {
 
   addItemToDB(name, brand, price, collectionName)
     .then((res) => {
-      console.log(res);
+      console.log(res.data.result);
       alert("Created!");
-      price.value = "";
     })
-    .catch(
-      (err) => ((error.value = err?.response?.data.error), console.log(err))
-    );
+    .catch((err) => (error.value = err?.response?.data.error));
 }
 
 //onMounted get collection names from backend and create array of it
 const collectionArray = ref([]);
+
 onMounted(() => {
   getCollections()
-    .then((data) => {
-      data.forEach((item) => {
+    .then((res) => {
+      res.data.forEach((item) => {
         collectionArray.value.push(item?.name);
       });
     })
@@ -42,6 +40,7 @@ onMounted(() => {
       if (err.response) {
         // The request was made and the server responded with a status code
         // that falls out of the range of 2xx
+
         console.log(err.response.data);
         console.log(err.response.status);
         console.log(err.response.headers);

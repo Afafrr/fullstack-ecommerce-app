@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 const { itemModel } = require("../models/itemModel");
-mongoose.connect(process.env.MONGODB_URI, { dbName: "Store" });
+const { findUser } = require("../routes/user.js");
 
 //func to check if user token is still valid
 function authenticateToken(req, res, next) {
@@ -20,17 +20,18 @@ function authenticateToken(req, res, next) {
 }
 
 router.get("/", authenticateToken, async (req, res) => {
-  const user = req.user;
-  console.log("Token authentication ", authenticateToken);
-
+  user = await findUser(req.user);
+  console.log(user);
+  // console.log(user.name);
   res.status(200).json(user);
 });
 
 router.post("/post", authenticateToken, async (req, res) => {
   const { name, brand, price, collectionName } = req.body;
-  console.log(req.user);
+  user = await findUser(req.user);
 
-  const item = mongoose.model(collectionName, itemModel);
+  const dbObject = mongoose.connection.useDb("Store");
+  const item = dbObject.model(collectionName, itemModel);
 
   try {
     console.log(name, brand, price);
@@ -39,9 +40,8 @@ router.post("/post", authenticateToken, async (req, res) => {
       brand: brand,
       price: price,
       collectionName: collectionName,
-      createdBy: req?.user.name,
+      createdBy: user?.name,
     });
-    console.log("created post", result);
 
     res.status(200).json({ result });
   } catch (err) {

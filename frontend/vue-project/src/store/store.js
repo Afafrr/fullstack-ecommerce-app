@@ -25,17 +25,12 @@ const store = createStore({
       state.cart[store.getters.getIndex(id)].count++;
     },
     substractCount(state, id) {
-      console.log(state.cart[store.getters.getIndex(id)]);
-
       const index = state.cart[store.getters.getIndex(id)];
-      if (index.count > 0) {
+      if (index.count > 1) {
         index.count--;
       }
     },
     removeFromArr(state, id) {
-      console.log(state.cart[store.getters.getIndex(id)]);
-      // state.cart[store.getters.getIndex(id)].count = 0;
-      // state.cart.splice(store.getters.getIndex(id), 1);
       state.cart = state.cart.filter((item) => {
         return item.itemId !== id;
       });
@@ -48,7 +43,7 @@ const store = createStore({
     },
     //return count of given id
     getCount: (state) => (id) => {
-      return state.cart[store.getters.getIndex(id)].count;
+      return state.cart[store.getters.getIndex(id)]?.count;
     },
   },
 

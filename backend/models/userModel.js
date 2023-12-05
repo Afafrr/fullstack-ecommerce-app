@@ -1,5 +1,14 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+
+const postSchema = new mongoose.Schema({
+  itemId: {
+    type: objectId,
+  },
+  createdAt: {
+    type: Date,
+    default: new Date(),
+  },
+});
 
 const userModel = new mongoose.Schema({
   name: {
@@ -15,6 +24,7 @@ const userModel = new mongoose.Schema({
     type: String,
     required: [true, "Password is required"],
   },
+  posts: { postSchema },
   createdAt: {
     type: Date,
     default: new Date(),

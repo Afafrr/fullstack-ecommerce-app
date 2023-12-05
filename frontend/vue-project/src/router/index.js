@@ -4,7 +4,8 @@ import PhonesPage from "../routes/PhonesPage.vue";
 import PhonePage from "../routes/PhonePage.vue";
 import NotFound from "../routes/NotFound.vue";
 import ShoppingCart from "../routes/ShoppingCart.vue";
-
+import CreatePost from "../routes/CreatePost.vue";
+import LoginPage from "../routes/LoginPage.vue";
 const routes = [
   {
     path: "/",
@@ -17,14 +18,24 @@ const routes = [
     component: PhonesPage,
   },
   {
+    path: "/phones/:id",
+    name: "PhonePage",
+    component: PhonePage,
+  },
+  {
     path: "/cart",
     name: "ShoppingCart",
     component: ShoppingCart,
   },
   {
-    path: "/phones/:id",
-    name: "PhonePage",
-    component: PhonePage,
+    path: "/posts/post",
+    name: "CreatePost",
+    component: CreatePost,
+  },
+  {
+    path: "/user/login",
+    name: "LoginPage",
+    component: LoginPage,
   },
 
   {

@@ -8,7 +8,9 @@ const app = express();
 //files imports
 const { connectToDb } = require("./db");
 const phonesRouter = require("./routes/phones");
-const userRouter = require("./routes/user");
+const { router: userRouter } = require("./routes/user");
+const storeCollections = require("./routes/storeCollections");
+const userPosts = require("./routes/posts");
 
 app.use(express.json()).use(
   cors({
@@ -26,12 +28,11 @@ connectToDb((err) => {
   }
 });
 
-app.get("/", async (req, res) => {
-  res.status(200).send("Hi");
-});
-
 //login and signup user
 app.use("/user", userRouter);
+app.use("/posts", userPosts);
 
 // /phones/ and /phones/:id routes
 app.use("/phones", phonesRouter);
+
+app.use("/collections", storeCollections);
