@@ -11,12 +11,14 @@ Project is fullstack website (MEVN), that is a e-commerce store. Shop workers ca
 Clients can browse through shop and add items to cart 
 	
 ## Technologies and packages
-Project is created with:
+Project is created with
+
 Frontend:
 * Vue 3.3.4
 * Vue-router 4.2.5
 * Vuex 4.0.2
 * Bootstrap
+
 Backend:
 * Node.js 18.18.0
 * Express 4.18.2
