@@ -31,21 +31,26 @@ Home page of website
 
 <img width="1080" alt="image" src="https://github.com/Afafrr/fullstack-ecommerce-app/assets/118637963/9b5456b4-51af-4170-8792-80c2dec80633">
 
+
 Users are destined to be shop workers that menage shop items,
 
 <img width="618" alt="image" src="https://github.com/Afafrr/fullstack-ecommerce-app/assets/118637963/93a73e8e-7a83-43da-b3fc-84c18ed9135a">
+
 
 after loggin in you can select collection and check which items in shop user has created
 
 <img width="618" alt="image" src="https://github.com/Afafrr/fullstack-ecommerce-app/assets/118637963/06367ea0-87a2-46c9-a082-0314078a5e55">
 
+
 User can also create shop items by filling a form
 
 <img width="619" alt="image" src="https://github.com/Afafrr/fullstack-ecommerce-app/assets/118637963/7063258a-43b2-4207-b1e8-39ea82c48c87">
 
+
 Clients can browse shop 
 
 <img width="508" alt="image" src="https://github.com/Afafrr/fullstack-ecommerce-app/assets/118637963/8f630703-a48d-44a5-ae8e-cac2311a5fcc">
+
 
 and add items to cart
 
