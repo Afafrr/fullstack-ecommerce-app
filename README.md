@@ -7,7 +7,7 @@
 * [Setup](#setup)
 
 ## General info
-Project is fullstack website (MEVN), that is a e-commerce store. Shop workers can log in to menage shop items. 
+Project is fullstack website (MEVN), that is an e-commerce store. Shop workers can log in to menage shop items. 
 Clients can browse through shop and add items to cart 
 	
 ## Technologies and packages
